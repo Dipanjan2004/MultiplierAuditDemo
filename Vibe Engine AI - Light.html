@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -49,14 +49,10 @@
       <a class="nav-link" href="#monetize">Platform</a>
       <a class="nav-link" href="#stats">Evidence</a>
       <a class="nav-link" href="#faq">Resources <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      <a class="nav-link" href="#cta">Pricing</a>
+      <a class="nav-link" href="#snapshot">Pricing</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-sm btn-outline" href="#">Log in</a>
-      <a class="btn btn-sm btn-solid" href="#cta">
-        Get snapshot
-        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8m-3-3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
+      <a class="btn btn-sm btn-solid" href="#">Log in</a>
     </div>
   </div>
 </header>
@@ -67,130 +63,156 @@
   <div class="container-wide">
     <div class="hero-grid">
       <div>
-        <span class="badge reveal">
-          <span class="dot"></span>
-          Generative-search revenue attribution · Live
-        </span>
-
         <h1 class="display h-xxl reveal">
           The revenue channel<br>
           you <em>can't</em> see.
         </h1>
 
         <p class="lead reveal">
-          Vibe Engine AI is the premium <strong>Generative Engine Optimization (GEO)</strong> platform that reveals what
-          ChatGPT, Perplexity, Gemini, and Claude are saying about your business — who they recommend instead — and
-          converts that attention into attributed pipeline. Built for operators running $3M–$30M businesses.
+          Vibe Engine is the <strong>Generative Engine Optimization</strong> platform that turns AI answers
+          into attributed pipeline — for operators who'd rather be recommended than optimized.
         </p>
 
         <div class="hero-ctas reveal">
-          <a class="btn btn-solid btn-lg" href="#cta">
-            Get your AI Revenue Snapshot
+          <a class="btn btn-solid btn-lg" href="#snapshot">
+            Start with a snapshot
             <span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </a>
-          <a class="btn btn-outline btn-lg" href="#how">
-            See how it works
-          </a>
+          <a class="btn btn-outline btn-lg" href="#how">How it works</a>
         </div>
 
         <div class="hero-meta reveal">
-          <div><b>30-day</b><span>implementation window</span></div>
-          <div><b>14</b><span>categories shipped to production</span></div>
-          <div><b>$0</b><span>spent on guesswork</span></div>
+          <div><b>30 days</b><span>to first attributed deal</span></div>
+          <div><b>14</b><span>categories in production</span></div>
         </div>
       </div>
     </div>
 
-    <!-- Hero scene: floating product chrome -->
+    <!-- Hero scene: live revenue-attribution dashboard -->
     <div class="hero-scene reveal">
-      <!-- Left chat preview -->
-      <div class="hero-scene-left">
-        <div class="chat tilt">
-          <div class="chat-head">
-            <div class="chat-tabs">
-              <span class="chat-tab active">ChatGPT</span>
-              <span class="chat-tab">Perplexity</span>
-              <span class="chat-tab">Gemini</span>
-              <span class="chat-tab">Claude</span>
-            </div>
-            <span class="chat-live"><span class="pulse"></span> Live query</span>
-          </div>
-          <div class="chat-body">
-            <div class="msg user"><div class="bubble">Who's the best moving company in Dallas?</div></div>
-            <div class="msg ai">
-              <div class="avatar">AI</div>
-              <div class="bubble">
-                Based on verified customer reviews and recent press, the top picks in Dallas are
-                <a href="#">Metro Move Co.</a>, <a href="#">Lone Star Relocation</a>, and
-                <a href="#">Bellhop</a>. Metro Move Co. has the highest on-time rate (96%) and is currently running a first-move discount<span class="cursor"></span>
-              </div>
-            </div>
-          </div>
-          <div class="chat-foot">
-            <span>session · 128ms · tokens 412</span>
-            <span>logged → revenue.db</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Right attribution card -->
-      <div class="hero-scene-right">
-        <div class="panel panel-pad floaty">
-          <div class="panel-row">
+      <!-- Primary attribution card -->
+      <div class="panel panel-pad hero-chart">
+        <div class="panel-row">
+          <div>
             <span class="eyebrow">Revenue attribution · last 30 days</span>
-            <span class="revenue-tick">+$184,210</span>
+            <div class="hero-chart-total">
+              <span class="hct-num">$184,210</span>
+              <span class="hct-delta">▲ 42.8%</span>
+            </div>
           </div>
-          <div class="mini-chart">
-            <div style="height:28%" class="mc-bar mc-bar-a"></div>
-            <div style="height:36%" class="mc-bar mc-bar-a"></div>
-            <div style="height:22%" class="mc-bar mc-bar-a"></div>
-            <div style="height:44%" class="mc-bar mc-bar-a"></div>
-            <div style="height:40%" class="mc-bar mc-bar-a"></div>
-            <div style="height:52%" class="mc-bar mc-bar-b"></div>
-            <div style="height:58%" class="mc-bar mc-bar-b"></div>
-            <div style="height:48%" class="mc-bar mc-bar-b"></div>
-            <div style="height:66%" class="mc-bar mc-bar-b"></div>
-            <div style="height:74%" class="mc-bar mc-bar-c"></div>
-            <div style="height:68%" class="mc-bar mc-bar-c"></div>
-            <div style="height:82%" class="mc-bar mc-bar-c"></div>
-            <div style="height:90%" class="mc-bar mc-bar-c"></div>
-            <div style="height:96%" class="mc-bar mc-bar-d"></div>
-          </div>
-          <div class="mini-chart-x">
-            <span>WK 01</span><span>WK 02</span><span>WK 03</span><span>WK 04</span>
-          </div>
+          <span class="revenue-tick">Live · synced now</span>
         </div>
-
-        <div class="panel panel-pad kpi-pair floaty-delay">
-          <div class="kpi">
-            <div class="eyebrow">Citations captured</div>
-            <div class="kpi-value">2,184</div>
-            <div class="kpi-delta up">▲ 38% vs prior period</div>
-          </div>
-          <div class="kpi">
-            <div class="eyebrow">Close rate (AI-sourced)</div>
-            <div class="kpi-value">14.2<span class="kpi-unit">%</span></div>
-            <div class="kpi-delta">vs 2.8% Google baseline</div>
-          </div>
+        <div class="mini-chart">
+          <div style="height:28%" class="mc-bar mc-bar-a"></div>
+          <div style="height:36%" class="mc-bar mc-bar-a"></div>
+          <div style="height:22%" class="mc-bar mc-bar-a"></div>
+          <div style="height:44%" class="mc-bar mc-bar-a"></div>
+          <div style="height:40%" class="mc-bar mc-bar-a"></div>
+          <div style="height:52%" class="mc-bar mc-bar-b"></div>
+          <div style="height:58%" class="mc-bar mc-bar-b"></div>
+          <div style="height:48%" class="mc-bar mc-bar-b"></div>
+          <div style="height:66%" class="mc-bar mc-bar-b"></div>
+          <div style="height:74%" class="mc-bar mc-bar-c"></div>
+          <div style="height:68%" class="mc-bar mc-bar-c"></div>
+          <div style="height:82%" class="mc-bar mc-bar-c"></div>
+          <div style="height:90%" class="mc-bar mc-bar-c"></div>
+          <div style="height:96%" class="mc-bar mc-bar-d"></div>
+        </div>
+        <div class="mini-chart-x">
+          <span>WK 01</span><span>WK 02</span><span>WK 03</span><span>WK 04</span>
         </div>
       </div>
+
+      <!-- Two anchor metrics beneath the chart -->
+      <div class="hero-kpis">
+        <div class="panel panel-pad kpi">
+          <div class="eyebrow">Citations captured</div>
+          <div class="kpi-value">2,184</div>
+          <div class="kpi-delta up">↑ 38% vs prior 30 days</div>
+        </div>
+        <div class="panel panel-pad kpi">
+          <div class="eyebrow">Close rate · AI-sourced</div>
+          <div class="kpi-value">14.2<span class="kpi-unit">%</span></div>
+          <div class="kpi-delta">against 2.8% from Google</div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Trust strip -->
+    <!-- Trust marquee: your brand optimized inside every major LLM -->
     <div class="trust-strip reveal">
       <span class="eyebrow">Your brand, optimized inside</span>
-      <div class="trust-row">
-        <span class="trust-item">ChatGPT</span>
-        <span class="trust-dot"></span>
-        <span class="trust-item">Perplexity</span>
-        <span class="trust-dot"></span>
-        <span class="trust-item">Gemini</span>
-        <span class="trust-dot"></span>
-        <span class="trust-item">Claude</span>
-        <span class="trust-dot"></span>
-        <span class="trust-item">Copilot</span>
-        <span class="trust-dot"></span>
-        <span class="trust-item">Meta AI</span>
+      <div class="logo-marquee" aria-label="Supported AI platforms">
+        <div class="logo-marquee-track">
+          <!-- set 1 -->
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M29.7 13.3a7.9 7.9 0 00-.7-6.5 8 8 0 00-8.6-3.8 8 8 0 00-13.4 2.9 8 8 0 00-5.3 3.9 8 8 0 001 9.4 8 8 0 00.7 6.5 8 8 0 008.6 3.8 8 8 0 005.9 2.6 8 8 0 007.5-5.4 8 8 0 005.3-3.9 8 8 0 00-1-9.5zm-12 16.8a6 6 0 01-3.8-1.4l.2-.1 6.3-3.6c.3-.2.5-.5.5-.9v-8.8l2.7 1.5v7.3a6 6 0 01-5.9 6zM5.1 24A6 6 0 014.4 20v-.2l6.3 3.6c.3.2.6.2.9 0l7.7-4.4v3.1l-6.4 3.7a6 6 0 01-8-.2zm-1.7-13.8a6 6 0 013.1-2.6v7.4c0 .4.2.7.5.9l7.7 4.4-2.7 1.6-6.4-3.7a6 6 0 01-2.2-8zm21.8 5l-7.7-4.5 2.7-1.5 6.4 3.7a6 6 0 01-1 10.9v-7.6c0-.4-.2-.7-.4-.9zm2.7-4l-.2-.1-6.3-3.7a1 1 0 00-1 0l-7.7 4.4V8.6l6.4-3.7a6 6 0 018.8 6.2zm-16.7 5.5l-2.6-1.5v-7.5a6 6 0 019.8-4.6l-.2.1-6.3 3.7c-.3.2-.5.5-.5.9zm1.5-3.2l3.4-2 3.5 2v4l-3.5 2-3.4-2z" fill="currentColor"/></svg>
+            <span>ChatGPT</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l8 5v8l-8 5-8-5V8zM8 13v8l8 5 8-5v-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M16 3v26M4 16h24" stroke="currentColor" stroke-width="1.2"/></svg>
+            <span>Perplexity</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c0 7.7 6.3 14 14 14-7.7 0-14 6.3-14 14 0-7.7-6.3-14-14-14 7.7 0 14-6.3 14-14z" fill="currentColor"/></svg>
+            <span>Gemini</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M8.5 22l4.6-12h1.8l4.6 12h-2.3l-1-2.8h-4.5l-1 2.8zm3.6-4.7h3.3l-1.6-4.6zM22.8 22l-4.5-12h2.3L24.4 22z" fill="currentColor"/></svg>
+            <span>Claude</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M11 10a6 6 0 016 0l4 2a6 6 0 010 10 6 6 0 01-6 0l-4-2a6 6 0 010-10z" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="11" cy="16" r="2.2" fill="currentColor"/><circle cx="21" cy="16" r="2.2" fill="currentColor"/></svg>
+            <span>Copilot</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 16c0-4 2-8 6-8 3 0 5 2 6 5 1-3 3-5 6-5 4 0 6 4 6 8s-2 8-6 8c-3 0-5-2-6-5-1 3-3 5-6 5-4 0-6-4-6-8z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+            <span>Meta AI</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M16 4a18 18 0 010 24M4 16h24M8 8l16 16M24 8L8 24" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+            <span>Grok</span>
+          </span>
+          <span class="logo-item">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 6h8l8 20h-8zM26 6l-6 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Mistral</span>
+          </span>
+
+          <!-- set 2 (duplicate for seamless loop) -->
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M29.7 13.3a7.9 7.9 0 00-.7-6.5 8 8 0 00-8.6-3.8 8 8 0 00-13.4 2.9 8 8 0 00-5.3 3.9 8 8 0 001 9.4 8 8 0 00.7 6.5 8 8 0 008.6 3.8 8 8 0 005.9 2.6 8 8 0 007.5-5.4 8 8 0 005.3-3.9 8 8 0 00-1-9.5zm-12 16.8a6 6 0 01-3.8-1.4l.2-.1 6.3-3.6c.3-.2.5-.5.5-.9v-8.8l2.7 1.5v7.3a6 6 0 01-5.9 6zM5.1 24A6 6 0 014.4 20v-.2l6.3 3.6c.3.2.6.2.9 0l7.7-4.4v3.1l-6.4 3.7a6 6 0 01-8-.2zm-1.7-13.8a6 6 0 013.1-2.6v7.4c0 .4.2.7.5.9l7.7 4.4-2.7 1.6-6.4-3.7a6 6 0 01-2.2-8zm21.8 5l-7.7-4.5 2.7-1.5 6.4 3.7a6 6 0 01-1 10.9v-7.6c0-.4-.2-.7-.4-.9zm2.7-4l-.2-.1-6.3-3.7a1 1 0 00-1 0l-7.7 4.4V8.6l6.4-3.7a6 6 0 018.8 6.2zm-16.7 5.5l-2.6-1.5v-7.5a6 6 0 019.8-4.6l-.2.1-6.3 3.7c-.3.2-.5.5-.5.9zm1.5-3.2l3.4-2 3.5 2v4l-3.5 2-3.4-2z" fill="currentColor"/></svg>
+            <span>ChatGPT</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M16 3l8 5v8l-8 5-8-5V8zM8 13v8l8 5 8-5v-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M16 3v26M4 16h24" stroke="currentColor" stroke-width="1.2"/></svg>
+            <span>Perplexity</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M16 2c0 7.7 6.3 14 14 14-7.7 0-14 6.3-14 14 0-7.7-6.3-14-14-14 7.7 0 14-6.3 14-14z" fill="currentColor"/></svg>
+            <span>Gemini</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M8.5 22l4.6-12h1.8l4.6 12h-2.3l-1-2.8h-4.5l-1 2.8zm3.6-4.7h3.3l-1.6-4.6zM22.8 22l-4.5-12h2.3L24.4 22z" fill="currentColor"/></svg>
+            <span>Claude</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M11 10a6 6 0 016 0l4 2a6 6 0 010 10 6 6 0 01-6 0l-4-2a6 6 0 010-10z" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="11" cy="16" r="2.2" fill="currentColor"/><circle cx="21" cy="16" r="2.2" fill="currentColor"/></svg>
+            <span>Copilot</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M4 16c0-4 2-8 6-8 3 0 5 2 6 5 1-3 3-5 6-5 4 0 6 4 6 8s-2 8-6 8c-3 0-5-2-6-5-1 3-3 5-6 5-4 0-6-4-6-8z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+            <span>Meta AI</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M16 4a18 18 0 010 24M4 16h24M8 8l16 16M24 8L8 24" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+            <span>Grok</span>
+          </span>
+          <span class="logo-item" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 32 32"><path d="M6 6h8l8 20h-8zM26 6l-6 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Mistral</span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -201,31 +223,16 @@
   <div class="container">
     <div class="split split-1-1">
       <div class="reveal">
-        <span class="badge">01 · The blind spot</span>
-        <h2 class="display h-l mt-5">
-          Buyers are asking AI. <em class="serif-it">You're not in the answer.</em>
+        <h2 class="display h-l">
+          Buyers are asking AI.<br><em class="serif-it">You're not in the answer.</em>
         </h2>
-        <p class="body mt-4">
-          AI answers confidently — with names, recommendations, and purchase-ready language. Your SEO agency's tools
-          don't reach this channel. There's no dashboard showing what <strong>ChatGPT</strong> is saying about your
-          business, who <strong>Perplexity</strong> is recommending instead, or what that pipeline is worth.
+        <p class="body mt-5">
+          AI answers confidently, by name. Your analytics can't see it, your SEO stack can't
+          reach it, and the category leader is being handed your pipeline — quietly, every day.
         </p>
         <p class="body">
-          <strong>That blind spot exists for almost every business in America right now.</strong>
-          Operators who close it first compound an unfair advantage. Those who don't will wonder, in a year, why
-          their inbound pipeline dried up while their competitors' exploded.
+          The blind spot closes once. Whoever closes it first keeps it.
         </p>
-
-        <div class="inline-stats">
-          <div class="inline-stat">
-            <div class="value">94<em>%</em></div>
-            <div class="label">of B2B buyers now consult AI before shortlisting vendors</div>
-          </div>
-          <div class="inline-stat">
-            <div class="value">0</div>
-            <div class="label">tools in your current SEO stack that see this channel</div>
-          </div>
-        </div>
       </div>
 
       <div class="reveal">
@@ -268,76 +275,71 @@
   </div>
 </section>
 
-<!-- ============ 30 DAYS TIMELINE ============ -->
-<section class="section section-alt" id="how">
+<!-- ============ 30 DAYS · SCROLL STACK ============ -->
+<section class="section section-alt experience" id="how">
   <div class="container">
     <div class="section-head reveal center">
-      <span class="badge">The process · 30 days end-to-end</span>
-      <h2 class="display h-xl mt-4">
-        From invisible to <em class="serif-it">revenue-generating</em> in 30 days.
+      <h2 class="display h-xl">
+        From invisible to <em class="serif-it">revenue-generating</em><br>in thirty days.
       </h2>
       <p class="lead mt-4">
-        A four-week operating cadence that audits your AI presence, ships production-grade GEO infrastructure,
-        and instruments attribution from LLM query all the way down to closed-won revenue in your CRM.
+        Four weeks. One operator. Audit, build, attribute — shipped as code, not a deck.
       </p>
     </div>
 
-    <div class="timeline">
-      <div class="t-step left reveal">
-        <div class="t-card tilt-hover">
-          <span class="kicker">Week 01 · Audit</span>
-          <h3>Intelligence</h3>
-          <p>We audit how AI talks about businesses in your category across every major LLM surface. Where are you
-             showing up? Where are you missing? Which competitor is being recommended for work that should be yours?</p>
-          <div class="t-deliverable">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><strong>Deliverable:</strong> AI Revenue Assessment — presence scores, citation share-of-voice, competitor benchmarks, and a revenue-opportunity estimate tied to the gaps we find.</span>
-          </div>
-        </div>
-        <div class="t-node"><div class="num">01</div></div>
-      </div>
+    <div class="experience-stack">
+      <div class="scroll-stack-scroller" id="scroll-stack-scroller">
+        <div class="scroll-stack-inner">
 
-      <div class="t-step right reveal">
-        <div class="t-node"><div class="num">02</div></div>
-        <div class="t-card tilt-hover">
-          <span class="kicker">Weeks 02–03 · Build</span>
-          <h3>Architecture</h3>
-          <p>We build your presence across the data sources LLMs actually pull from — authoritative content,
-             structured schema, trust signals, and the technical layer beneath it all. We write real code and hand
-             it to your team or agency to deploy.</p>
-          <div class="t-deliverable">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Not a strategy deck. Not a list of suggestions. <strong>Production-ready implementation</strong> — every file, every schema, every test, every integration.</span>
+          <div class="scroll-stack-card experience-stack-card">
+            <div class="exp-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div class="exp-info">
+              <span class="exp-eyebrow">Week 01 · Intelligence</span>
+              <h3>We map every mention.</h3>
+              <p>Where AI names you, who it names instead, and the revenue riding on the gap between the two.</p>
+            </div>
+            <div class="exp-year">01</div>
           </div>
-        </div>
-      </div>
 
-      <div class="t-step left reveal">
-        <div class="t-card tilt-hover">
-          <span class="kicker">Week 04 · Measure</span>
-          <h3>Revenue tracking</h3>
-          <p>We instrument your pipeline so AI-sourced visitors, leads, and closed-won revenue can be attributed
-             back to the exact queries and models that produced them. The channel becomes legible for the first time.</p>
-          <div class="t-deliverable">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>A live dashboard, owned by you, wired into your CRM and analytics stack. The data stays in your warehouse — not ours.</span>
+          <div class="scroll-stack-card experience-stack-card">
+            <div class="exp-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 4l-6 8 6 8M16 4l6 8-6 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="exp-info">
+              <span class="exp-eyebrow">Weeks 02–03 · Architecture</span>
+              <h3>We ship production code.</h3>
+              <p>Schema, structured data, authority layer — committed to your repo, reviewed by your team, deployed on your stack.</p>
+            </div>
+            <div class="exp-year">02</div>
           </div>
-        </div>
-        <div class="t-node"><div class="num">03</div></div>
-      </div>
 
-      <div class="t-step right reveal">
-        <div class="t-node"><div class="num">04</div></div>
-        <div class="t-card tilt-hover">
-          <span class="kicker">Ongoing · Compound</span>
-          <h3>Retention &amp; Expansion</h3>
-          <p>Monthly optimization sprints, new category coverage, and continuous model-diff monitoring — so when
-             ChatGPT pushes a model update or Perplexity changes its citation logic, your presence doesn't
-             silently disappear.</p>
-          <div class="t-deliverable">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>A named engineer, weekly working sessions, and a private Slack channel — not a ticket queue.</span>
+          <div class="scroll-stack-card experience-stack-card">
+            <div class="exp-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-8M14 7h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="exp-info">
+              <span class="exp-eyebrow">Week 04 · Attribution</span>
+              <h3>We connect query to close.</h3>
+              <p>AI-sourced traffic flows through your site, into your CRM, and out the other side as a line on your P&amp;L. Visible for the first time.</p>
+            </div>
+            <div class="exp-year">03</div>
           </div>
+
+          <div class="scroll-stack-card experience-stack-card">
+            <div class="exp-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 14.6 7.1 17.2 8 11.7 4 7.8l5.5-.8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="exp-info">
+              <span class="exp-eyebrow">Ongoing · Compound</span>
+              <h3>We keep you recommended.</h3>
+              <p>Models change. We watch the diff. Your placement holds — not because it's static, but because we maintain it.</p>
+            </div>
+            <div class="exp-year">04</div>
+          </div>
+
+          <div class="scroll-stack-end"></div>
         </div>
       </div>
     </div>
@@ -349,21 +351,13 @@
   <div class="container">
     <div class="split">
       <div class="reveal sticky-col">
-        <span class="badge">The Platform</span>
-        <h2 class="display h-xl mt-4">
-          Other companies<br>
-          <span class="mute">monitor</span> AI.<br>
-          We <em class="serif-it">monetize</em> it.
+        <h2 class="display h-xl">
+          Others monitor AI.<br>We <em class="serif-it">monetize</em> it.
         </h2>
         <p class="lead mt-4">
-          Monitoring tells you what happened. Monetization tells you what it was <em>worth</em>, which queries
-          produced it, and what to do next. Our platform connects LLM citations to closed-won revenue — so every
-          dollar of AI attention gets a line item.
+          Monitoring tells you what happened. Monetization tells you what it was worth —
+          and builds the next one.
         </p>
-        <a class="btn btn-solid mt-5" href="#cta">
-          Explore the platform
-          <span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
       </div>
 
       <div class="feature-list reveal">
@@ -372,12 +366,8 @@
             <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M10 4c-4 0-7 6-7 6s3 6 7 6 7-6 7-6-3-6-7-6z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2.2" stroke="currentColor" stroke-width="1.5"/></svg>
           </div>
           <div>
-            <h4>Presence monitoring</h4>
-            <p>We continuously track what ChatGPT, Gemini, Perplexity, and Claude say about you across the queries
-               your buyers are actually asking — not the keyword list your SEO tool guessed at.</p>
-            <div class="feature-tags">
-              <span>Citations</span><span>Share of voice</span><span>Prompt coverage</span>
-            </div>
+            <h4>Presence</h4>
+            <p>Continuous surface-level monitoring across every model your buyers use — not the keywords your old tool guessed.</p>
           </div>
         </div>
 
@@ -386,12 +376,8 @@
             <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M3 14l4-4 3 3 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7h4v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
-            <h4>Traffic attribution</h4>
-            <p>We identify visitors arriving through AI-influenced searches and follow them through your site to
-               conversion — so marketing can finally defend the spend and prove the channel exists.</p>
-            <div class="feature-tags">
-              <span>Referrer fingerprinting</span><span>Session replay</span><span>UTM-free</span>
-            </div>
+            <h4>Attribution</h4>
+            <p>Every AI-sourced visit fingerprinted, followed, and matched to the exact query that produced it.</p>
           </div>
         </div>
 
@@ -400,26 +386,8 @@
             <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v4l2.5 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
           <div>
-            <h4>Revenue to close</h4>
-            <p>We follow the lead into your pipeline. Did it close? What was it worth? Which AI query generated it?
-               One connected thread — from model to money.</p>
-            <div class="feature-tags">
-              <span>CRM sync</span><span>Multi-touch</span><span>Pipeline lift</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
-          <div>
-            <h4>Owned data</h4>
-            <p>Every signal, every optimization, every result lives in your own warehouse. We don't hold your data
-               hostage, and there's no lock-in on day one or day one thousand.</p>
-            <div class="feature-tags">
-              <span>BigQuery</span><span>Snowflake</span><span>Postgres</span>
-            </div>
+            <h4>Revenue</h4>
+            <p>The lead hits your CRM. It closes. You know which model sent it, and what it was worth. One thread, model to money.</p>
           </div>
         </div>
       </div>
@@ -431,41 +399,209 @@
 <section class="section section-alt" id="stats">
   <div class="container">
     <div class="section-head reveal center">
-      <span class="badge">The numbers</span>
-      <h2 class="display h-xl mt-4">
-        AI search is already a <em class="serif-it">buying channel.</em>
-        Most businesses have zero presence in it.
+      <h2 class="display h-xl">
+        AI search is already a<br><em class="serif-it">buying</em> channel.
       </h2>
     </div>
 
     <div class="stats-grid reveal">
       <div class="stat">
         <div class="caption">Buyer behavior · 2026</div>
-        <div class="value">40<em>%+</em></div>
-        <div class="label">of buyers have used AI to research service providers in the past 6 months.</div>
+        <div class="value">40<em>%</em></div>
+        <div class="label">of B2B buyers research vendors through AI before reaching your site.</div>
       </div>
       <div class="stat">
         <div class="caption">Industry tooling</div>
         <div class="value">0</div>
-        <div class="label">standard SEO tools today track AI-sourced revenue or LLM citation quality.</div>
+        <div class="label">standard SEO platforms today track AI-sourced revenue.</div>
       </div>
       <div class="stat">
-        <div class="caption">Blind spot</div>
+        <div class="caption">Your baseline</div>
         <div class="value"><em>$</em>0</div>
-        <div class="label">is what most businesses know about what AI is sending them — or not sending them.</div>
+        <div class="label">is what most operators know about what AI is sending them, or not.</div>
       </div>
-      <div class="stat">
-        <div class="caption">Conversion rate</div>
-        <div class="value">4–5<em>×</em></div>
-        <div class="label">AI traffic converts at 4–5× Google — AI visitors at 14.2% vs Google's 2.8%.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SNAPSHOT — dedicated conversion section ============ -->
+<section class="section snapshot" id="snapshot">
+  <div class="container">
+    <div class="section-head reveal center">
+      <span class="eyebrow">The AI Revenue Snapshot</span>
+      <h2 class="display h-xl mt-4">
+        See exactly where<br>your brand stands <em class="serif-it">inside AI.</em>
+      </h2>
+      <p class="lead mt-4">
+        A ten-page analyst report. Forty-eight hours. One move you can ship this week.
+      </p>
+    </div>
+
+    <div class="snapshot-grid">
+
+      <!-- Left: Sample score visual -->
+      <div class="snap-visual reveal">
+        <div class="snap-card">
+          <div class="snap-card-head">
+            <span class="snap-tag">Sample Report</span>
+            <span class="snap-domain">acme-corp.com</span>
+          </div>
+
+          <div class="score-ring-wrap">
+            <svg class="score-ring" viewBox="0 0 260 260" aria-hidden="true">
+              <circle class="ring-track" cx="130" cy="130" r="96"/>
+              <circle class="ring-fill" cx="130" cy="130" r="96"/>
+            </svg>
+            <div class="score-content">
+              <span class="score-num">31</span>
+              <span class="score-unit">out of 100</span>
+              <span class="score-band">At Risk</span>
+            </div>
+          </div>
+
+          <div class="score-bands">
+            <span class="band"><i style="background:#ef4444"></i>Critical</span>
+            <span class="band active"><i style="background:#f97316"></i>At Risk</span>
+            <span class="band"><i style="background:#eab308"></i>Emerging</span>
+            <span class="band"><i style="background:#84cc16"></i>Competitive</span>
+            <span class="band"><i style="background:#22c55e"></i>Leading</span>
+          </div>
+
+          <div class="snap-stats">
+            <div><span class="ss-lbl">Revenue gap (est.)</span><span class="ss-val">$180K–$340K</span></div>
+            <div><span class="ss-lbl">Queries missed</span><span class="ss-val">47 / 62</span></div>
+            <div><span class="ss-lbl">Citation share</span><span class="ss-val">8.4%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 5 deliverables -->
+      <div class="snap-deliverables reveal">
+        <span class="eyebrow">What's inside the 10-page report</span>
+        <ol class="deliverables">
+          <li>
+            <span class="d-num">01</span>
+            <div>
+              <h4>Revenue Gap Estimate</h4>
+              <p>A conservative dollar range of the AI-sourced pipeline going to competitors instead of you. Just the math — no inflation.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">02</span>
+            <div>
+              <h4>Your AI Revenue Score</h4>
+              <p>A 0–100 score across six dimensions showing exactly what's holding you back and where you already have an edge.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">03</span>
+            <div>
+              <h4>Query Map</h4>
+              <p>The exact queries where AI sends buyers to your competitors — with the recommendations they're getting, word-for-word.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">04</span>
+            <div>
+              <h4>Analyst's Note</h4>
+              <p>An assessment of your specific situation, written by a human. Not a template. The one insight that changes how you see your market.</p>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">05</span>
+            <div>
+              <h4>Your Quick Win</h4>
+              <p>The single action — named, scoped, sequenced — you can ship this week. No strategy call. No retainer. One move that moves the needle.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
 
-    <div class="data-note reveal">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.5 4v5h-1V6h1zm-1 7h1v1h-1v-1z" fill="currentColor"/></svg>
-      <div>Every signal, every optimization, every result lives in your own analytics stack.
-        <b>We built the platform.</b> <a href="#">You own the data →</a></div>
+    <!-- 3-step process strip -->
+    <div class="snap-process reveal">
+      <div class="sp-step">
+        <span class="sp-num">01</span>
+        <div>
+          <h5>Tell us about your business</h5>
+          <p>Your market, your competitors, your goals — one short form.</p>
+        </div>
+      </div>
+      <div class="sp-arrow" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="sp-step">
+        <span class="sp-num">02</span>
+        <div>
+          <h5>We run the analysis</h5>
+          <p>Every major LLM tested against the real queries in your category — by a human analyst.</p>
+        </div>
+      </div>
+      <div class="sp-arrow" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-4-4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="sp-step">
+        <span class="sp-num">03</span>
+        <div>
+          <h5>Your report, in 48 hours</h5>
+          <p>10 pages · delivered to your inbox · no follow-up call required.</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Pricing — single, confident -->
+    <div class="snap-pricing reveal">
+      <div class="price-card">
+        <div class="price-head">
+          <span class="eyebrow light">AI Revenue Snapshot</span>
+          <div class="price-row">
+            <span class="price-currency">$</span>
+            <span class="price-amount">97</span>
+          </div>
+          <span class="price-unit">One-time payment · delivered in 48 hours</span>
+          <div class="price-tags">
+            <span class="price-tag">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Money-back guarantee
+            </span>
+            <span class="price-tag">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="4" r="2" stroke="currentColor" stroke-width="1.3"/><path d="M2 10c0-2 1.8-3.2 4-3.2S10 8 10 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              Named analyst
+            </span>
+          </div>
+        </div>
+        <div class="price-sep" aria-hidden="true"></div>
+        <div class="price-body">
+          <span class="price-what">What's included</span>
+          <ul class="price-list">
+            <li>
+              <span class="price-check"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Ten-page analyst report tailored to your ICP
+            </li>
+            <li>
+              <span class="price-check"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Visibility scores across ChatGPT, Claude, Gemini, Perplexity
+            </li>
+            <li>
+              <span class="price-check"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Revenue Gap, Query Map, and one Quick Win to ship
+            </li>
+            <li>
+              <span class="price-check"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6.5l2.5 2.5L10 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Full refund if it isn't useful
+            </li>
+          </ul>
+          <div class="price-cta">
+            <a class="btn btn-solid-inverse btn-lg" href="#">
+              Get the snapshot
+              <span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <span class="price-microcopy">Secure Stripe checkout · No call required</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -473,299 +609,200 @@
 <section class="section" id="who">
   <div class="container">
     <div class="section-head reveal center">
-      <span class="badge">Qualification</span>
-      <h2 class="display h-xl mt-4">
-        Built for businesses serious about <em class="serif-it">growth.</em>
+      <h2 class="display h-xl">
+        Built for operators serious<br>about <em class="serif-it">growth.</em>
       </h2>
       <p class="lead mt-4">
-        This isn't for everyone. It's for operators running <strong>$3M–$30M businesses</strong> who want to own a
-        revenue channel before their competitors figure it out — and who want a partner, not a vendor, to build it
-        with them.
+        We take on a small number of clients. You get a named engineer, not a ticket queue.
       </p>
     </div>
 
-    <div class="accordion reveal">
-      <details class="acc" open>
-        <summary>
-          <span class="idx">01</span>
-          <span class="q">You already have an SEO agency, and it's working.</span>
-          <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </summary>
-        <div class="a">
-          Good. Keep them. They handle Google. We handle the AI channel, which their tools weren't built for. In
-          Month 1 we hand over production-ready code for deployment — not recommendations, not a PDF. Code. We're
-          happy to work alongside your SEO agency, improving and building on their work.
+    <div class="fit-grid reveal">
+      <article class="fit-card">
+        <div class="fit-card-top">
+          <span class="fit-num">01</span>
+          <span class="fit-tag">Fit</span>
         </div>
-      </details>
+        <h3 class="fit-title">You already have an SEO agency.</h3>
+        <p class="fit-body">Keep them — they handle Google. We handle the AI channel their tools weren't built for, and ship code into the same repo.</p>
+        <div class="fit-meta">
+          <span class="fit-dot"></span>
+          Works alongside your current stack
+        </div>
+      </article>
 
-      <details class="acc">
-        <summary>
-          <span class="idx">02</span>
-          <span class="q">You're looking for your next client channel.</span>
-          <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </summary>
-        <div class="a">
-          Paid channels are saturated. Referrals are unpredictable. AI is the one channel where being first costs
-          less than being tenth will cost a year from now. We help you claim it before the category does.
+      <article class="fit-card">
+        <div class="fit-card-top">
+          <span class="fit-num">02</span>
+          <span class="fit-tag">Fit</span>
         </div>
-      </details>
+        <h3 class="fit-title">You want your next channel.</h3>
+        <p class="fit-body">Being first in AI costs less than being tenth will cost a year from now. We help you claim the category before it claims you.</p>
+        <div class="fit-meta">
+          <span class="fit-dot"></span>
+          Compounding first-mover position
+        </div>
+      </article>
 
-      <details class="acc">
-        <summary>
-          <span class="idx">03</span>
-          <span class="q">You want a partner, not a vendor.</span>
-          <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </summary>
-        <div class="a">
-          We work with a small number of clients at a time. You get a named engineer, not a ticket queue. Weekly
-          working sessions with your leadership, not a monthly status email. A private Slack channel with direct
-          access — not a help-desk.
+      <article class="fit-card">
+        <div class="fit-card-top">
+          <span class="fit-num">03</span>
+          <span class="fit-tag">Fit</span>
         </div>
-      </details>
+        <h3 class="fit-title">You want a partner, not a vendor.</h3>
+        <p class="fit-body">A named engineer on your account. Weekly working sessions. A shared Slack channel. No help desk, no account manager, no tickets.</p>
+        <div class="fit-meta">
+          <span class="fit-dot"></span>
+          Direct access, every week
+        </div>
+      </article>
 
-      <details class="acc">
-        <summary>
-          <span class="idx">04</span>
-          <span class="q">You want ownership, not lock-in.</span>
-          <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </summary>
-        <div class="a">
-          Everything we build ships to your repo, your warehouse, your dashboards. If we part ways tomorrow, the
-          infrastructure continues to work for you. That's the deal.
+      <article class="fit-card">
+        <div class="fit-card-top">
+          <span class="fit-num">04</span>
+          <span class="fit-tag">Fit</span>
         </div>
-      </details>
+        <h3 class="fit-title">You want ownership, not lock-in.</h3>
+        <p class="fit-body">Every line ships to your repo. Every signal lives in your warehouse. If we part ways tomorrow, the work keeps working.</p>
+        <div class="fit-meta">
+          <span class="fit-dot"></span>
+          Your code, your data, your keys
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ TESTIMONIAL ============ -->
-<section class="section section-alt" id="voices">
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
   <div class="container">
-    <div class="testimonial reveal">
-      <span class="quote-mark" aria-hidden="true">"</span>
-      <p class="t-quote">
-        We had zero idea what ChatGPT was saying about us. Within 30 days Vibe Engine mapped every citation, built
-        the schema stack, and the first AI-attributed deals were already closing. It's the first time we've had a
-        revenue channel appear <em>with its own line item</em> on the dashboard.
-      </p>
-      <div class="t-author">
-        <div class="t-avatar">JM</div>
-        <div>
-          <div class="t-name">Julia Marchetti</div>
-          <div class="t-title">VP Growth · Mid-market B2B SaaS</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA + FAQ ============ -->
-<section class="section" id="cta">
-  <div class="container">
-    <div class="cta-card reveal">
-      <div class="cta-bg" aria-hidden="true"></div>
-      <div class="cta-content">
-        <span class="cta-price">Pricing · one-time · delivered in 5 days</span>
-        <h2>AI is already picking winners in your category.</h2>
-        <p>We make sure you're one of them — and the revenue proves it. Start with a snapshot: a 30-page audit of
-          how AI talks about you today, what it costs you, and exactly what to fix. No call required.</p>
-      </div>
-      <div class="cta-actions">
-        <a class="btn btn-solid-inverse btn-lg" href="#">
-          Get your AI Revenue Snapshot · $97
-          <span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-        <a class="btn btn-outline-inverse btn-lg" href="#">Book a working session →</a>
-        <span class="cta-note">Delivered in 5 business days · no follow-up call required.</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="container" id="faq" style="margin-top: clamp(80px, 12vh, 140px);">
     <div class="section-head reveal center">
-      <span class="badge">FAQ</span>
-      <h2 class="display h-xl mt-4">Frequently asked questions.</h2>
+      <h2 class="display h-xl">Questions, answered.</h2>
     </div>
 
     <div class="accordion reveal">
       <details class="acc" open>
         <summary>
           <span class="idx">Q1</span>
-          <span class="q">Why can't our SEO agency just handle this?</span>
+          <span class="q">Why can't our SEO agency handle this?</span>
           <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </summary>
         <div class="a">
-          It's not a gap in their work; it's a gap in their expertise. There's no SEO platform that monitors ChatGPT
-          and Perplexity citations. No analytics suite that flags AI-sourced visitors. No dashboard that shows
-          AI-attributed revenue. <strong>We built those tools.</strong> That's the difference.
+          Not a gap in their work — a gap in their tooling. No SEO platform monitors AI citations. No analytics suite flags AI-sourced visitors. We built the ones that do.
         </div>
       </details>
 
       <details class="acc">
         <summary>
           <span class="idx">Q2</span>
-          <span class="q">We already have an SEO agency, and we're happy with them.</span>
+          <span class="q">Is AI search big enough to matter?</span>
           <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </summary>
         <div class="a">
-          Keep them. We sit alongside, not in place of. Our code ships into the repo they already work in, with
-          comments and tests so they can own ongoing optimization.
+          Not the majority of queries — the majority of high-intent ones. Buyers researching a serious purchase start on AI. The revenue is there; the analytics just haven't caught up.
         </div>
       </details>
 
       <details class="acc">
         <summary>
           <span class="idx">Q3</span>
-          <span class="q">Is AI search actually big enough to matter?</span>
+          <span class="q">How do you prove revenue came from AI?</span>
           <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </summary>
         <div class="a">
-          It's not the majority of queries yet — it's the majority of <strong>high-intent queries</strong>. Buyers
-          researching a multi-thousand-dollar decision are disproportionately on AI first. The revenue concentration
-          is already there; the analytics just haven't caught up.
+          Referrer signals, first-touch fingerprints, and synthetic query probes against each model. We match inbound traffic to the exact answer that sent it, then follow the session to closed revenue in your CRM.
         </div>
       </details>
 
       <details class="acc">
         <summary>
           <span class="idx">Q4</span>
-          <span class="q">How do you actually prove revenue came from AI?</span>
-          <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </summary>
-        <div class="a">
-          A combination of referrer signals, first-touch URL fingerprints, and a synthetic query-probe system we run
-          against the major models. We match inbound traffic to the exact answer that sent them, then follow the
-          session through to closed revenue in your CRM.
-        </div>
-      </details>
-
-      <details class="acc">
-        <summary>
-          <span class="idx">Q5</span>
           <span class="q">What results should I expect?</span>
           <span class="chev"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </summary>
         <div class="a">
-          By day 30, you'll see yourself appearing in AI answers for the queries in your category. By day 60–90,
-          attributed pipeline. We don't promise numbers because categories differ — we promise the infrastructure
-          that makes the numbers legible.
+          By day 30, you appear in AI answers across your category. By day 60–90, attributed pipeline. We don't promise numbers — we promise the infrastructure that makes them legible.
         </div>
       </details>
-    </div>
-
-    <div class="center mt-6 reveal">
-      <a class="btn btn-outline" href="#">
-        View all FAQs
-        <span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      </a>
     </div>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
-  <div class="footer-ambient" aria-hidden="true"></div>
+  <div class="container">
 
-  <div class="container-wide footer-inner">
-
-    <!-- Top banner / mega CTA -->
-    <div class="footer-cta reveal">
-      <div class="footer-cta-copy">
-        <span class="eyebrow light">Ready when you are</span>
-        <h2 class="display">Be the brand <em class="serif-it">AI recommends.</em></h2>
-        <p>Start with a snapshot. In 5 business days you'll know exactly what ChatGPT, Perplexity, Gemini and Claude are saying about your business — and what it's costing you.</p>
-      </div>
-      <div class="footer-cta-actions">
-        <a class="btn btn-solid-inverse btn-lg" href="#cta">
-          Get your AI Revenue Snapshot · $97
-          <span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-        <a class="btn btn-outline-inverse btn-lg" href="#">Book a working session →</a>
-      </div>
+    <!-- CTA section — Chatterify pattern -->
+    <div class="cta-section">
+      <h1 class="cta-title">Let's find your<br>revenue leak.</h1>
+      <a href="#snapshot" class="btn-hire">
+        <span class="icon-circle">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Book a strategy call
+      </a>
     </div>
 
-    <!-- Hero wordmark band -->
-    <div class="footer-wordmark reveal" aria-hidden="true">
-      <span>Vibe</span>
-      <span class="serif-it">Engine</span>
-      <span class="wordmark-ai">AI</span>
-    </div>
-
-    <!-- Columns -->
+    <!-- Footer grid -->
     <div class="footer-grid">
-      <div class="footer-col footer-brand-col">
-        <a class="brand brand-on-dark" href="#">
-          <span class="brand-mark brand-mark-invert" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M4 4l8 16 8-16-8 6z" fill="currentColor"/></svg>
+      <div class="footer-col-main">
+        <div class="footer-logos">
+          <span class="footer-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M4 4l8 16 8-16-8 6z" fill="#fff"/></svg>
           </span>
-          <span class="brand-wordmark">Vibe Engine<span class="brand-suffix">AI</span></span>
-        </a>
-        <p class="footer-about">
-          The premium <strong>Generative Engine Optimization (GEO)</strong> platform for operators. We track citations across ChatGPT, Perplexity, Gemini &amp; Claude — and convert AI attention into attributed pipeline.
-        </p>
-        <div class="footer-newsletter">
-          <label for="footer-email">Get the monthly GEO Report</label>
-          <form class="footer-subscribe" onsubmit="event.preventDefault(); this.classList.add('done');">
-            <input id="footer-email" type="email" placeholder="you@company.com" required>
-            <button type="submit" aria-label="Subscribe">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9m-3.5-3.5L11.5 7 8 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <span class="subscribe-ok">Thanks — check your inbox ✓</span>
-          </form>
-          <span class="footer-privacy-note">No spam. One concise email a month. Unsubscribe anytime.</span>
+          <span class="footer-logo-amp">&amp;</span>
+          <span class="footer-logo-mark footer-logo-mark--alt" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" width="28" height="28"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.5"/><path d="M8 12l3 3 5-6" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+        <p class="footer-desc">A premium <strong>Generative Engine Optimization</strong> partnership. We track citations across ChatGPT, Perplexity, Gemini and Claude — and convert AI attention into attributed pipeline for operators running $3M–$30M businesses.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="2.5" width="11" height="11" rx="3.5"/><circle cx="8" cy="8" r="2.8"/><circle cx="11.5" cy="4.5" r=".6" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2l5 6-5 6h1.8l4-4.5 3.5 4.5h3.7L9.4 7.2 14 2h-1.8L8.5 6.3 5.5 2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2.5 6h2v8h-2zM3.5 2.5a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zM6 6h2v1.2a2.8 2.8 0 014.6 2.2V14h-2V9.6c0-.8-.5-1.3-1.2-1.3s-1.4.5-1.4 1.4V14H6z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .5A7.5 7.5 0 00.5 8a7.5 7.5 0 005.1 7.1c.4.1.5-.2.5-.4v-1.3c-2.1.5-2.5-1-2.5-1-.3-.8-.8-1-.8-1-.7-.5 0-.5 0-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.9 2.2.6.1-.5.3-.9.5-1.1-1.7-.2-3.4-.8-3.4-3.7 0-.8.3-1.5.8-2-.1-.2-.3-1 .1-2 0 0 .6-.2 2 .8a7 7 0 013.7 0c1.4-1 2-.8 2-.8.4 1 .2 1.8.1 2 .5.5.8 1.2.8 2 0 2.9-1.7 3.5-3.4 3.7.3.2.5.7.5 1.4v2.1c0 .2.1.5.5.4A7.5 7.5 0 0015.5 8 7.5 7.5 0 008 .5z"/></svg></a>
         </div>
       </div>
 
       <div class="footer-col">
-        <h5>Product</h5>
-        <ul>
-          <li><a href="#how"><span class="f-dot"></span>How it works</a></li>
-          <li><a href="#monetize"><span class="f-dot"></span>Platform</a></li>
-          <li><a href="#cta"><span class="f-dot"></span>Pricing</a></li>
-          <li><a href="#"><span class="f-dot"></span>Changelog</a></li>
-          <li><a href="#"><span class="f-dot"></span>Integrations</a></li>
+        <h4>Platform</h4>
+        <ul class="footer-links">
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#monetize">Presence monitoring</a></li>
+          <li><a href="#monetize">Revenue attribution</a></li>
+          <li><a href="#snapshot">Pricing</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h5>Resources</h5>
-        <ul>
-          <li><a href="#"><span class="f-dot"></span>Case studies</a></li>
-          <li><a href="#"><span class="f-dot"></span>GEO guide</a></li>
-          <li><a href="#faq"><span class="f-dot"></span>FAQ</a></li>
-          <li><a href="#"><span class="f-dot"></span>AI search report</a></li>
-          <li><a href="#"><span class="f-dot"></span>Blog</a></li>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Case studies</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="#"><span class="f-dot"></span>About</a></li>
-          <li><a href="#"><span class="f-dot"></span>Careers <span class="chip">Hiring</span></a></li>
-          <li><a href="#"><span class="f-dot"></span>Contact</a></li>
-          <li><a href="#"><span class="f-dot"></span>Schedule a call</a></li>
+        <h4>Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@vibe-engine.ai">hello@vibe-engine.ai</a></li>
+          <li><a href="https://vibe-engine.ai" target="_blank" rel="noopener">vibe-engine.ai</a></li>
+          <li><a href="#snapshot">Schedule a call</a></li>
         </ul>
       </div>
     </div>
 
     <!-- Bottom bar -->
-    <div class="footer-bot">
-      <div class="footer-bot-left">
-        <span class="footer-status"><span class="status-dot"></span>All systems operational</span>
-        <span class="footer-copy">© 2026 Vibe Engine AI · Delaware, USA</span>
-      </div>
-      <div class="footer-bot-middle">
-        <div class="footer-socials">
-          <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M2 5h2v7H2zM3 2a1 1 0 110 2 1 1 0 010-2zM6 5h2v1a2.5 2.5 0 014 2v4h-2V8a1 1 0 00-2 0v4H6z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="2" width="10" height="10" rx="3"/><circle cx="7" cy="7" r="2.5"/><circle cx="10" cy="4" r=".5" fill="currentColor"/></svg></a>
-          <a href="#" aria-label="X"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M2 2l4.5 5.5L2 12h1.5L7 8l3 4h3L8 5.5 12 2h-1.5L7.3 5.5 4.5 2z"/></svg></a>
-          <a href="#" aria-label="GitHub"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.89-1.16-.89-1.16-.73-.5.06-.49.06-.49.8.06 1.22.83 1.22.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82A7.68 7.68 0 018 4.23c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-bot-links">
+    <div class="footer-bottom">
+      <span class="footer-copyright">&copy; 2026 Vibe Engine AI. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#monetize">Platform</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
-        <a href="#">Security</a>
-        <a href="#">DPA</a>
       </div>
     </div>
   </div>
@@ -846,18 +883,87 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 8);
 }, { passive: true });
 
-/* ---------- Parallax tilt on hover (premium feel) ---------- */
-document.querySelectorAll('.tilt-hover').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `perspective(900px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg) translateY(-4px)`;
+/* ---------- Scroll Stack — Chatterify pattern (vanilla port) ---------- */
+(function initScrollStack() {
+  const cards = Array.from(document.querySelectorAll('.scroll-stack-card'));
+  const endEl = document.querySelector('.scroll-stack-end');
+  if (!cards.length || !endEl) return;
+
+  // Config — mirrors Chatterify's Home.jsx ScrollStack props
+  const itemDistance = 24;
+  const itemScale = 0.03;
+  const itemStackDistance = 20;
+  const stackPositionPct = 0.22;   // 22% from top of viewport
+  const scaleEndPct = 0.10;
+  const baseScale = 0.88;
+
+  let cardOffsets = [];
+  let endOffset = 0;
+
+  // Respect reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  cards.forEach((card, i) => {
+    if (i < cards.length - 1) card.style.marginBottom = itemDistance + 'px';
+    card.style.position = 'sticky';
+    card.style.willChange = 'transform, filter';
+    card.style.transformOrigin = 'top center';
+    card.style.backfaceVisibility = 'hidden';
   });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
+
+  function measure() {
+    const vh = window.innerHeight;
+    const stickyBase = stackPositionPct * vh;
+    cards.forEach((card, i) => {
+      card.style.top = (stickyBase + itemStackDistance * i) + 'px';
+    });
+    const prev = cards.map(c => c.style.transform);
+    cards.forEach(c => { c.style.transform = ''; });
+    cardOffsets = cards.map(c => c.getBoundingClientRect().top + window.scrollY);
+    endOffset = endEl.getBoundingClientRect().top + window.scrollY;
+    cards.forEach((c, i) => { c.style.transform = prev[i] || ''; });
+  }
+
+  function progress(scrollTop, start, end) {
+    if (scrollTop < start) return 0;
+    if (scrollTop > end) return 1;
+    return (scrollTop - start) / (end - start);
+  }
+
+  let ticking = false;
+  function update() {
+    const scrollTop = window.scrollY;
+    const vh = window.innerHeight;
+    const stackPx = stackPositionPct * vh;
+    const scaleEndPx = scaleEndPct * vh;
+
+    cards.forEach((card, i) => {
+      const cardTop = cardOffsets[i];
+      const triggerStart = cardTop - stackPx - itemStackDistance * i;
+      const triggerEnd = cardTop - scaleEndPx;
+      const scaleProg = progress(scrollTop, triggerStart, triggerEnd);
+      const target = baseScale + i * itemScale;
+      const scale = 1 - scaleProg * (1 - target);
+      card.style.transform = `scale(${scale})`;
+    });
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }
+
+  measure();
+  update();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', () => { measure(); update(); }, { passive: true });
+  window.addEventListener('load', () => { measure(); update(); });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => { measure(); update(); });
+  }
+})();
 
 /* ---------- Typing animation ---------- */
 const phrases = [
