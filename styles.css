@@ -664,9 +664,71 @@ section { position: relative; z-index: 2; }
 }
 /* Only draw a seam where paper tone changes — not between every section */
 .section-alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+/* Dark break — one ink-black section for dramatic pacing */
+.section-dark {
+  background: var(--ink);
+  color: #fff;
+  border-top: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+}
+.section-dark .display,
+.section-dark h2 { color: #fff; }
+.section-dark .serif-it { color: rgba(255,255,255,0.72); font-style: italic; }
+.section-dark .lead,
+.section-dark .body,
+.section-dark p { color: rgba(255,255,255,0.72); }
+.section-dark .chapter-num { color: #fff; }
+.section-dark .chapter-rule { background: rgba(255,255,255,0.3); }
+.section-dark .chapter-label { color: rgba(255,255,255,0.55); }
+.section-dark .stats-grid {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.08);
+  box-shadow: none;
+}
+.section-dark .stat {
+  background: var(--ink);
+  border-color: rgba(255,255,255,0.06);
+}
+.section-dark .stat:hover { background: #1a1a1a; }
+.section-dark .stat .caption { color: rgba(255,255,255,0.48); }
+.section-dark .stat .value { color: #fff; }
+.section-dark .stat .value em { color: rgba(255,255,255,0.75); font-style: italic; }
+.section-dark .stat .label { color: rgba(255,255,255,0.72); }
+
+/* Chapter header — editorial mono row above each section heading */
+.chapter {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-mono, var(--font-body));
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.chapter-num {
+  color: var(--ink);
+  font-weight: 500;
+}
+.chapter-rule {
+  width: 28px; height: 1px;
+  background: var(--border-strong, var(--border));
+}
+.chapter-label {
+  color: var(--muted);
+  font-weight: 400;
+}
+.section-head.center .chapter {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
 /* Collapse the gap between two same-tone sections so the problem + evidence flow reads as one block */
-.section:not(.section-alt):not(.snapshot) + .section:not(.section-alt):not(.snapshot) { padding-top: 0; }
-.section:not(.section-alt):not(.snapshot):has(+ .section:not(.section-alt):not(.snapshot)) { padding-bottom: clamp(40px, 6vh, 72px); }
+.section:not(.section-alt):not(.snapshot):not(.section-dark) + .section:not(.section-alt):not(.snapshot):not(.section-dark) { padding-top: 0; }
+.section:not(.section-alt):not(.snapshot):not(.section-dark):has(+ .section:not(.section-alt):not(.snapshot):not(.section-dark)) { padding-bottom: clamp(40px, 6vh, 72px); }
 .section-head { margin-bottom: 72px; }
 .section-head.center .badge { margin-bottom: 4px; }
 .section-head.center h2 { margin: 18px auto 0; max-width: 22ch; }
