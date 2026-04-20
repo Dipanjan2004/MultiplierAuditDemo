@@ -1,4 +1,4 @@
-/* ========== Vibe Engine AI — Premium White Theme ==========
+/* ========== MultiplierAudit — Premium White Theme ==========
    Inspired by Chatterify × OD Solution (Outfit + Inter typography,
    pill buttons, 24px card radii, rich hover/scroll animations,
    premium DACH-agency visual polish on a pure white paper). */
@@ -664,6 +664,9 @@ section { position: relative; z-index: 2; }
 }
 /* Only draw a seam where paper tone changes — not between every section */
 .section-alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+/* Collapse the gap between two same-tone sections so the problem + evidence flow reads as one block */
+.section:not(.section-alt):not(.snapshot) + .section:not(.section-alt):not(.snapshot) { padding-top: 0; }
+.section:not(.section-alt):not(.snapshot):has(+ .section:not(.section-alt):not(.snapshot)) { padding-bottom: clamp(40px, 6vh, 72px); }
 .section-head { margin-bottom: 72px; }
 .section-head.center .badge { margin-bottom: 4px; }
 .section-head.center h2 { margin: 18px auto 0; max-width: 22ch; }
@@ -755,7 +758,7 @@ section { position: relative; z-index: 2; }
   stroke-dasharray: calc(2 * 3.14159 * 96 * 0.75) calc(2 * 3.14159 * 96);
 }
 .score-ring .ring-fill {
-  fill: none; stroke: #f97316;
+  fill: none; stroke: var(--ink);
   stroke-width: 12; stroke-linecap: round;
   stroke-dasharray: calc(2 * 3.14159 * 96);
   stroke-dashoffset: calc(2 * 3.14159 * 96);
@@ -787,7 +790,7 @@ section { position: relative; z-index: 2; }
 .score-band {
   font-family: var(--font-heading);
   font-size: 13px; font-weight: 600;
-  color: #f97316;
+  color: var(--ink);
   margin-top: 2px;
   letter-spacing: 0.02em;
 }
@@ -809,10 +812,16 @@ section { position: relative; z-index: 2; }
 .score-bands .band i {
   width: 8px; height: 8px; border-radius: 50%;
   display: inline-block;
-  opacity: 0.45;
+  opacity: 0.55;
+  background: var(--ink);
 }
+.score-bands .band.tier-1 i { background: var(--ink); }
+.score-bands .band.tier-2 i { background: var(--ink); opacity: 0.75; }
+.score-bands .band.tier-3 i { background: var(--ink); opacity: 0.45; }
+.score-bands .band.tier-4 i { background: var(--accent-glow); opacity: 0.85; }
+.score-bands .band.tier-5 i { background: var(--accent-ink); opacity: 1; }
 .score-bands .band.active { color: var(--text-primary); }
-.score-bands .band.active i { opacity: 1; box-shadow: 0 0 0 3px rgba(249,115,22,0.18); }
+.score-bands .band.active i { opacity: 1; box-shadow: 0 0 0 3px rgba(17,17,17,0.1); }
 
 .snap-stats {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
